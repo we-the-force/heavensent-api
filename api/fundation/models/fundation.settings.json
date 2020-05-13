@@ -15,7 +15,7 @@
     "description": {
       "type": "text"
     },
-    "logo": {
+    "cover": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -27,8 +27,34 @@
       "required": false
     },
     "donations": {
-      "via": "fundation",
-      "collection": "donation"
+      "collection": "donation",
+      "via": "fundation"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "zipcode": {
+      "type": "integer"
+    },
+    "contactPersonName": {
+      "type": "string"
+    },
+    "fundationCategory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fundation-category.fundation-category"
     }
   }
 }

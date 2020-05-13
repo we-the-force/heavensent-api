@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_fundation_category_fundation_categories",
+  "info": {
+    "name": "fundationCategory",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

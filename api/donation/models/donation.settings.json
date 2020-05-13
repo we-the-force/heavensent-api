@@ -13,8 +13,8 @@
       "type": "decimal"
     },
     "fundation": {
-      "model": "fundation",
-      "via": "donations"
+      "via": "donations",
+      "model": "fundation"
     },
     "user": {
       "plugin": "users-permissions",
