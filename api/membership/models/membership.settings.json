@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memberships",
+  "info": {
+    "name": "Membership"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

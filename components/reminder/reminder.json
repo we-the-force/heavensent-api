@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_reminder_reminders",
+  "info": {
+    "name": "reminder",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "time"
+    },
+    "repeat": {
+      "type": "enumeration",
+      "enum": [
+        "not",
+        "weekly",
+        "monthly",
+        "yearly"
+      ]
+    },
+    "locationLat": {
+      "type": "string"
+    },
+    "locationLng": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memories",
+  "info": {
+    "name": "Memory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "owners": {
+      "via": "ownedMemories",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
+    },
+    "recipients": {
+      "via": "receivedMemories",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
+    },
+    "reminderType": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "date",
+        "location"
+      ],
+      "required": true,
+      "default": "none"
+    },
+    "reminder": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reminder.reminder"
+    },
+    "sent": {
+      "type": "boolean"
+    }
+  }
+}

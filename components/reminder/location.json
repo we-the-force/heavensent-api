@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_reminder_locations",
+  "info": {
+    "name": "location",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "lat": {
+      "type": "string"
+    },
+    "lng": {
+      "type": "string"
+    }
+  }
+}
