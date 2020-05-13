@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donations",
+  "info": {
+    "name": "Donation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "amount": {
+      "type": "decimal"
+    },
+    "fundation": {
+      "model": "fundation",
+      "via": "donations"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "donations"
+    }
+  }
+}

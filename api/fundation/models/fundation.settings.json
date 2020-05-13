@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fundations",
+  "info": {
+    "name": "Fundation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "donations": {
+      "via": "fundation",
+      "collection": "donation"
+    }
+  }
+}
