@@ -14,6 +14,42 @@
     },
     "description": {
       "type": "string"
+    },
+    "memoriesPerYear": {
+      "type": "integer"
+    },
+    "canAddText": {
+      "type": "boolean",
+      "default": true
+    },
+    "canAddVideo": {
+      "type": "boolean"
+    },
+    "canAddPictures": {
+      "type": "boolean"
+    },
+    "canAddLocation": {
+      "type": "boolean"
+    },
+    "costPerYear": {
+      "type": "decimal"
+    },
+    "costPerMonth": {
+      "type": "decimal"
+    },
+    "memoryQuota": {
+      "type": "integer"
+    },
+    "art": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

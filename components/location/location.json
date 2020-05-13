@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_location_locations",
+  "info": {
+    "name": "location",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "lat": {
+      "type": "string"
+    },
+    "lng": {
+      "type": "string"
+    },
+    "repeats": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

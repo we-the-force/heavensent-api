@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_user_contacts",
+  "info": {
+    "name": "contact",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "guardian": {
+      "type": "email"
+    },
+    "info": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "relation": {
+      "type": "string"
+    },
+    "isAdmin": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_membership_user_memberships",
+  "info": {
+    "name": "userMembership",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "isActive": {
+      "type": "boolean"
+    },
+    "nextBillingDate": {
+      "type": "datetime"
+    },
+    "billedCard": {
+      "type": "biginteger"
+    },
+    "plan": {
+      "model": "membership"
+    }
+  }
+}

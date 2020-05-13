@@ -60,13 +60,6 @@
     "birthday": {
       "type": "date"
     },
-    "guardian": {
-      "type": "email"
-    },
-    "isMinor": {
-      "type": "boolean",
-      "default": false
-    },
     "ownedMemories": {
       "collection": "memory",
       "via": "owners"
@@ -74,10 +67,6 @@
     "receivedMemories": {
       "collection": "memory",
       "via": "recipients"
-    },
-    "contacts": {
-      "plugin": "users-permissions",
-      "collection": "user"
     },
     "profilePicture": {
       "model": "file",
@@ -89,6 +78,19 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "currentMembership": {
+      "type": "component",
+      "repeatable": false,
+      "component": "membership.user-membership"
+    },
+    "localTime": {
+      "type": "integer"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user.contact"
     }
   }
 }
