@@ -93,8 +93,11 @@
       "component": "user.contact"
     },
     "donations": {
-      "via": "user",
-      "collection": "donation"
+      "collection": "donation",
+      "via": "user"
+    },
+    "phone": {
+      "type": "biginteger"
     }
   }
 }

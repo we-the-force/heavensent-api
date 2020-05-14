@@ -17,9 +17,9 @@
       "model": "fundation"
     },
     "user": {
+      "via": "donations",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "donations"
+      "model": "user"
     }
   }
 }
