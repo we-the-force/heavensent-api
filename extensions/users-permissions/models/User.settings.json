@@ -87,11 +87,6 @@
     "localTime": {
       "type": "integer"
     },
-    "contact": {
-      "type": "component",
-      "repeatable": true,
-      "component": "user.contact"
-    },
     "donations": {
       "collection": "donation",
       "via": "user"

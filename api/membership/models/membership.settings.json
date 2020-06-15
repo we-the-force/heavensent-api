@@ -37,7 +37,7 @@
     "costPerMonth": {
       "type": "decimal"
     },
-    "memoryQuota": {
+    "memoryQuotaMB": {
       "type": "integer"
     },
     "art": {
