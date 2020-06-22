@@ -28,6 +28,9 @@
     },
     "editMemories": {
       "type": "boolean"
+    },
+    "nickname": {
+      "type": "string"
     }
   }
 }

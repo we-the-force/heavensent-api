@@ -93,6 +93,9 @@
     },
     "phone": {
       "type": "biginteger"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }
