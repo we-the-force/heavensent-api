@@ -26,6 +26,9 @@
     },
     "locationLng": {
       "type": "string"
+    },
+    "date_end": {
+      "type": "date"
     }
   }
 }
