@@ -299,7 +299,7 @@ module.exports = {
       if (emailResult)
       {
         console.log(`Updating memory with id: ${memory.id}`);
-        // await strapi.api.memory.services.memory.update({id: memory.id}, {sent: true});
+        await strapi.api.memory.services.memory.update({id: memory.id}, {sent: true});
       }
       else
       {
