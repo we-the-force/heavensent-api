@@ -19,7 +19,7 @@ module.exports = {
   //
   // }
 
-  '30 * * * * *': async () => {
+  '0 0 16 * * *': async () => {
     let today = new Date();
     console.log(`${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`);
 
