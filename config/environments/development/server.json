@@ -1,11 +1,11 @@
 {
-  "host": "${process.env.HOST || '167.172.156.126'}",
+  "host": "${process.env.HOST || 'localhost'}",
   "port": "${process.env.PORT || 1337}",
   "proxy": {
     "enabled": false
   },
   "cron": {
-    "enabled": false
+    "enabled": true
   },
   "admin": {
     "autoOpen": false

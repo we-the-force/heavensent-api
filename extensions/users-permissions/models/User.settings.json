@@ -61,12 +61,12 @@
       "type": "date"
     },
     "ownedMemories": {
-      "via": "owners",
-      "collection": "memory"
+      "collection": "memory",
+      "via": "owners"
     },
     "receivedMemories": {
-      "via": "recipients",
-      "collection": "memory"
+      "collection": "memory",
+      "via": "recipients"
     },
     "profilePicture": {
       "model": "file",
@@ -96,6 +96,9 @@
     },
     "name": {
       "type": "string"
+    },
+    "created_as_receiver": {
+      "type": "boolean"
     }
   }
 }

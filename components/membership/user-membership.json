@@ -12,11 +12,14 @@
     "nextBillingDate": {
       "type": "datetime"
     },
-    "billedCard": {
-      "type": "biginteger"
-    },
     "plan": {
       "model": "membership"
+    },
+    "token": {
+      "type": "string"
+    },
+    "billedCard": {
+      "type": "string"
     }
   }
 }

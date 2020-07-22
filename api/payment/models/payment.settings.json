@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "name": "payment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "token": {
+      "type": "string",
+      "unique": false
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "date": {
+      "type": "date"
+    },
+    "concept": {
+      "type": "text"
+    }
+  }
+}
