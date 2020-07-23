@@ -27,8 +27,8 @@
       "required": false
     },
     "donations": {
-      "collection": "donation",
-      "via": "fundation"
+      "via": "fundation",
+      "collection": "donation"
     },
     "tel": {
       "type": "string"
@@ -55,6 +55,9 @@
       "type": "component",
       "repeatable": false,
       "component": "fundation-category.fundation-category"
+    },
+    "suggestedAmountUSD": {
+      "type": "decimal"
     }
   }
 }

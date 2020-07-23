@@ -22,6 +22,12 @@
     },
     "concept": {
       "type": "text"
+    },
+    "amountUSD": {
+      "type": "string"
+    },
+    "userEmail": {
+      "type": "email"
     }
   }
 }

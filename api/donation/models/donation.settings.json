@@ -13,13 +13,19 @@
       "type": "decimal"
     },
     "fundation": {
-      "via": "donations",
-      "model": "fundation"
+      "model": "fundation",
+      "via": "donations"
     },
     "user": {
-      "via": "donations",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "donations"
+    },
+    "date": {
+      "type": "date"
+    },
+    "token": {
+      "type": "string"
     }
   }
 }
