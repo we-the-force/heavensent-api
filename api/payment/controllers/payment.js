@@ -22,7 +22,7 @@ module.exports = {
 
         let entry = sanitizeEntity(entity, {model: strapi.models.payment});
 
-        await strapi.plugins['email'].services.email.send({
+        strapi.plugins['email'].services.email.send({
             to: entry.userEmail,
             from: 'about@wetheforce.com',
             // subject: `${entry.owner.username} set you as their admin.`,
@@ -235,5 +235,6 @@ module.exports = {
             
             </html>`
          });
+        return entry;
     }
 };
