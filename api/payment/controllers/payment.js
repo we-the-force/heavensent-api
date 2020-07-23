@@ -22,6 +22,7 @@ module.exports = {
 
         let entry = sanitizeEntity(entity, {model: strapi.models.payment});
 
+        console.log(`About to send email to ${entry.userEmail}`);
         strapi.plugins['email'].services.email.send({
             to: entry.userEmail,
             from: 'about@wetheforce.com',
@@ -235,6 +236,9 @@ module.exports = {
             
             </html>`
          });
+        console.log("Finish email request");
+        console.log("Resulting entry");
+        console.log(entry);
         return entry;
     }
 };
