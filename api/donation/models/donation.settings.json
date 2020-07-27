@@ -9,7 +9,7 @@
     "timestamps": true
   },
   "attributes": {
-    "amount": {
+    "amountUSD": {
       "type": "decimal"
     },
     "fundation": {
@@ -25,6 +25,9 @@
       "type": "date"
     },
     "token": {
+      "type": "string"
+    },
+    "concept": {
       "type": "string"
     }
   }
