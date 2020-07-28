@@ -177,14 +177,6 @@ module.exports = {
             line-height: 10px; padding: 0;">&nbsp;</td>
                                                     </tr>
                                                 </table>
-                                                <table class="content__button" width="190" height="48" cellpadding="0" cellspacing="0" border="0" bgcolor="#9DD6EA" style="background-color: #9DD6EA; border-radius: 3px; border-spacing: 0; color: #ffffff !important; font-family: Arial,sans-serif; height: 48px; padding: 0 15px;">
-                                                    <tr>
-                                                      <!-- LINK DE 
-            END -->
-                                                        <td align="center" valign="middle" height="48" style="color: #ffffff !important; padding: 0;"> <a class="content__button-link" href="http://app.mydoctorize.com/account/signup/confirmation?email=example@gmail.com&code=3456" target="_blank" style="Margin: 0; color: #ffffff !important; display: inline-block; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 20px; font-weight: 600; line-height: 48px; margin: 0 !important; padding: 0; text-decoration: none;">Open</a>                                                </td>
-                                                        <!-- FIN LINK DE BACKEND -->
-                                                    </tr>
-                                                </table>
                                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                                     <tr>
                                                         <td height="30" style="font-size: 30px; line-height: 30px; padding: 0;">&nbsp;</td>
