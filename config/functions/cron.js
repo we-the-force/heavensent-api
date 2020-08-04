@@ -66,7 +66,7 @@ module.exports = {
         var recipient = memory.recipients[conIndex];
 
         let obj = {
-          url: `http://heavensentnow.com/#!/memory/${memory.id}`,
+          url: `http://app.heavensentnow.com/#!/memory/${memory.id}`,
           sender: memory.owners[0].name != "" ? memory.owners[0].name : memory.owners[0].username,
           senderEmail: memory.owners[0].email,
           name: recipient.name != "" ? recipient.name : recipient.username,
@@ -166,8 +166,8 @@ module.exports = {
                                   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                       <tr>
                                           <td align="center" valign="top" style="padding: 0;">
-                                              <a href="http://app.heavensent.com/" target="_blank" style="Margin: 0; color: #9DD6EA; font-family: Arial,sans-serif; font-weight: normal; line-height: 1.3; margin: 0 !important; padding:
-          0; text-decoration: underline;"><img src="https://heavensentnow.com/static/img/logo-email.png" width="auto" height="80" border="0" alt="Heaven Sent" style="border: none; display: block; height: 80px !important; margin: 0; padding: 0; width: auto !important;"></a>
+                                              <a href="http://app.heavensentnow.com/" target="_blank" style="Margin: 0; color: #9DD6EA; font-family: Arial,sans-serif; font-weight: normal; line-height: 1.3; margin: 0 !important; padding:
+          0; text-decoration: underline;"><img src="https://app.heavensentnow.com/static/img/logo-email.png" width="auto" height="80" border="0" alt="Heaven Sent" style="border: none; display: block; height: 80px !important; margin: 0; padding: 0; width: auto !important;"></a>
                                           </td>
                                       </tr>
                                   </table>
@@ -263,7 +263,7 @@ module.exports = {
                                   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                       <tr>
                                           <td class="inner header__text" align="center" valign="top" style="color: #cccccc; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; padding: 0px 10px; text-decoration: none;">
-                                              <a class="header__link" href="http://app.heavensent.com" target="_blank" style="Margin: 0; color: #cccccc; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; line-height: 1.3; margin: 0 !important; padding: 0; text-decoration: none;">&copy;&nbsp;2020&nbsp;Heaven Sent&nbsp;</a>                                    </td>
+                                              <a class="header__link" href="http://app.heavensentnow.com" target="_blank" style="Margin: 0; color: #cccccc; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; line-height: 1.3; margin: 0 !important; padding: 0; text-decoration: none;">&copy;&nbsp;2020&nbsp;Heaven Sent&nbsp;</a>                                    </td>
                                       </tr>
                                   </table>
                               </td>
