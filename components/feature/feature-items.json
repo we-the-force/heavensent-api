@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_feature_feature_items",
+  "info": {
+    "name": "feature_items",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Desc": {
+      "type": "string"
+    }
+  }
+}

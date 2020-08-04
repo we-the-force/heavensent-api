@@ -1,0 +1,71 @@
+{
+  "collectionName": "components_landing_landings",
+  "info": {
+    "name": "Landing",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "home": {
+      "type": "string"
+    },
+    "sign_up": {
+      "type": "string"
+    },
+    "about": {
+      "type": "string"
+    },
+    "features": {
+      "type": "string"
+    },
+    "reviews": {
+      "type": "string"
+    },
+    "downloads": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "home_desc": {
+      "type": "string"
+    },
+    "about_desc": {
+      "type": "richtext"
+    },
+    "feature_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feature.feature-items"
+    },
+    "review_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "review.review-items"
+    },
+    "price_title": {
+      "type": "string"
+    },
+    "price_sub": {
+      "type": "string"
+    },
+    "text_notes": {
+      "type": "string"
+    },
+    "pictures": {
+      "type": "string"
+    },
+    "on_demand": {
+      "type": "string"
+    },
+    "mem_pers_year": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    }
+  }
+}
