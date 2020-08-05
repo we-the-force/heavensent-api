@@ -50,6 +50,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "stripeID": {
+      "type": "string"
     }
   }
 }
