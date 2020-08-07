@@ -460,7 +460,7 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
                                             <tr>
                                                 <td class="inner" align="center" valign="top" style="padding: 0px 10px;">
                                                     <p class="h1" style="Margin:
-    0; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 25px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">You've been charged with a membership</p><br/><br/>
+    0; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 25px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">Your invoice is available</p><br/><br/>
                                                   <p style="margin-left: auto; margin-right: auto; width: 80%; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">
                                                      
                                                     Amount: <b>${entry.amountUSD}</b>
@@ -482,7 +482,7 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
                                         
                                         <table class="content__button" width="190" height="48" cellpadding="0" cellspacing="0" border="0" bgcolor="#9DD6EA" style="background-color: #9DD6EA; border-radius: 3px; border-spacing: 0; color: #ffffff !important; font-family: Arial,sans-serif; height: 48px; padding: 0 15px;">
                                                     <tr>
-                                                        <td align="center" valign="middle" height="48" style="color: #ffffff !important; padding: 0;"> <a class="content__button-link" href="${entry.link}" target="_blank" style="Margin: 0; color: #ffffff !important; display: inline-block; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 20px; font-weight: 600; line-height: 48px; margin: 0 !important; padding: 0; text-decoration: none;">Receipt</a>                                                </td>
+                                                        <td align="center" valign="middle" height="48" style="color: #ffffff !important; padding: 0;"> <a class="content__button-link" href="${entry.link}" target="_blank" style="Margin: 0; color: #ffffff !important; display: inline-block; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 20px; font-weight: 600; line-height: 48px; margin: 0 !important; padding: 0; text-decoration: none;">Invoice</a>                                                </td>
                                                         <!-- FIN LINK DE BACKEND -->
                                                     </tr>
                                                 </table>
