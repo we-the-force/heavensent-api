@@ -228,9 +228,9 @@ module.exports = {
             
             </html>`
          });
-        console.log("Finish email request");
-        console.log("Resulting entry");
-        console.log(entry);
+        // console.log("Finish email request");
+        // console.log("Resulting entry");
+        // console.log(entry);
         return entry;
     }
 };
