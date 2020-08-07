@@ -45,10 +45,8 @@ async function handleListenedEvent(event)
     console.log("event is listenable");
     console.log(`The current event is '${event.type}'`);
     let userEmail = await getCustomerEmail(event.data.object.customer);
-    console.log(`getCustomerEmail thing: ${await getCustomerEmail(event.data.object.customer)}`);
     let isUndefined = userEmail === undefined;
     let isNull = isUndefined ? true : userEmail === null;
-    console.log(`userVar: '${userEmail}', (${isUndefined} && ${isNull})`);
     if (!isUndefined && !isNull)
     {
         switch (event.type)
@@ -63,11 +61,11 @@ async function handleListenedEvent(event)
                 break;
             case 'invoice.payment_succeeded':
                 console.log("---Invoice payment succeded");
-                // console.log(event);
+                // console.log(event.data.object.lines.data);
                 let entryObject = {
                     amountUSD: `$${event.data.object.amount_paid / 100} USD`,
                     date: formatDate(new Date(event.data.object.created * 1000), false),
-                    concept: event.data.object.description,
+                    concept: event.data.object.lines.data.description,
                     link: event.data.object.hosted_invoice_url
                 };
                 sendPaymentSucceedEmail(userEmail, entryObject);
@@ -433,7 +431,6 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
                             <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                 <tr>
                                     <td height="45" style="font-size: 45px; line-height: 45px; padding: 0;">&nbsp;</td>
-    console.log('Sending successful payment email');
     </tr>
                             </table>
                         </td>
@@ -461,7 +458,7 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
     0; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 25px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">You've been charged with a membership</p><br/><br/>
                                                   <p style="margin-left: auto; margin-right: auto; width: 80%; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">
                                                      
-                                                    Amount: <b>$${entry.amountUSD}</b>
+                                                    Amount: <b>${entry.amountUSD}</b>
                                                     <br>
                                                     Date: <b>${entry.date}</b>
                                                     <br>
@@ -539,7 +536,6 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
         </center>
     </body>
     
-    console.log('Sending successful payment email');
     </html>`
     strapi.plugins['email'].services.email.send({
         to: customerEmail,
