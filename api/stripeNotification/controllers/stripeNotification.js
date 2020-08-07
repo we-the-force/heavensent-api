@@ -61,11 +61,12 @@ async function handleListenedEvent(event)
                 break;
             case 'invoice.payment_succeeded':
                 console.log("---Invoice payment succeded");
-                console.log(event.data.object.lines.data);
+                // console.log(event.data.object.lines.data);
                 let entryObject = {
                     amountUSD: `$${event.data.object.amount_paid / 100} USD`,
                     date: formatDate(new Date(event.data.object.created * 1000), false),
-                    concept: event.data.object.lines.data.description,
+                    // concept: event.data.object.lines.data.description,
+                    concept: `HeavenSent Membership`,
                     link: event.data.object.hosted_invoice_url
                 };
                 console.log('');
