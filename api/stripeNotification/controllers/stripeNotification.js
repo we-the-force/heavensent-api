@@ -68,6 +68,10 @@ async function handleListenedEvent(event)
                     concept: event.data.object.lines.data.description,
                     link: event.data.object.hosted_invoice_url
                 };
+                console.log('');
+                console.log('Entry Object');
+                console.log(entryObject);
+                console.log('');
                 sendPaymentSucceedEmail(userEmail, entryObject);
                 break;
             case 'customer.subscription.deleted':
