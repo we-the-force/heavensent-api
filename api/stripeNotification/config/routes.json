@@ -1,0 +1,12 @@
+{
+    "routes": [
+        {
+            "method": "POST",
+            "path": "/stripeNotifications",
+            "handler": "stripeNotification.receiveEvents",
+            "config": {
+                "policies": []
+            }
+        }
+    ]
+}
