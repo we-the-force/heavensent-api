@@ -22,7 +22,7 @@ module.exports = {
 
         let entry = sanitizeEntity(entity, {model: strapi.models.payment});
 
-        console.log(`About to send email to ${entry.userEmail}`);
+        // console.log(`About to send email to ${entry.userEmail}`);
         // strapi.plugins['email'].services.email.send({
         //     to: entry.userEmail,
         //     from: 'info@heavensentnow.com',

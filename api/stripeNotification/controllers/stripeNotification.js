@@ -60,21 +60,31 @@ async function handleListenedEvent(event)
                 // handlePaymentMethodAttached(paymentMethod);
                 break;
             case 'invoice.payment_succeeded':
-                console.log("---Invoice payment succeded");
-                // console.log(event.data.object.lines.data);
-                let entryObject = {
-                    amountUSD: `$${event.data.object.amount_paid / 100} USD`,
-                    date: formatDate(new Date(event.data.object.created * 1000), false),
-                    // concept: event.data.object.lines.data.description,
-                    concept: `HeavenSent Membership`,
-                    link: event.data.object.hosted_invoice_url
-                };
-                console.log('');
-                console.log('Entry Object');
-                console.log(entryObject);
-                console.log('');
-                sendPaymentSucceedEmail(userEmail, entryObject);
-                break;
+                try
+                {
+                    
+                    console.log("---Invoice payment succeded");
+                    // console.log(event.data.object.lines.data);
+                    let entryObject = {
+                        amountUSD: `$${event.data.object.amount_paid / 100} USD`,
+                        date: formatDate(new Date(event.data.object.created * 1000), false),
+                        // concept: event.data.object.lines.data.description,
+                        concept: `HeavenSent Membership`,
+                        link: event.data.object.hosted_invoice_url
+                    };
+                    console.log('');
+                    console.log('Entry Object');
+                    console.log(entryObject);
+                    console.log('');
+                    sendPaymentSucceedEmail(userEmail, entryObject);
+                    break;
+                }
+                catch (err)
+                {
+                    console.log("Error on switch (invoice.payment_succeeded)");
+                    console.log(err);
+                    break;
+                }
             case 'customer.subscription.deleted':
                 console.log("---Customer subscription deleted!");
                 // console.log(event);
@@ -345,6 +355,13 @@ async function sendCancelationEmail(customerEmail)
 async function sendPaymentSucceedEmail(customerEmail, entry)
 {
     console.log('Sending successful payment email');
+    let auxObject = {
+        to: customerEmail,
+        from: 'info@heavensentnow.com',
+        subject: 'HeavenSent membership successful invoice',
+    }
+    console.log("Attempting to send email: ");
+    console.log(auxObject);
     try
     {
         let htmlEmail = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
