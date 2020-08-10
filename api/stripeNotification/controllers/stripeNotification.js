@@ -566,6 +566,9 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
             from: 'info@heavensentnow.com',
             subject: 'HeavenSent membership charge',
             html: htmlEmail
+        }).catch(function (promErr){
+            console.log('Error sending successful email :c');
+            console.log(promErr);
         });
     }
     catch (err)
