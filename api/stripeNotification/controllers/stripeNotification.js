@@ -568,7 +568,7 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
             html: htmlEmail
         }).catch(function (promErr){
             console.log('Error sending successful email :c');
-            console.log(promErr);
+            console.log(promErr.messages);
         });
     }
     catch (err)
