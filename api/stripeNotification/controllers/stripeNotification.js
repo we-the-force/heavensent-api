@@ -337,7 +337,7 @@ async function sendCancelationEmail(customerEmail)
     </html>`
     strapi.plugins['email'].services.email.send({
         to: customerEmail,
-        from: 'about@heavensentnow.com',
+        from: 'info@heavensentnow.com',
         subject: 'Membership cancelation',
         html: htmlEmail
     });
@@ -345,7 +345,9 @@ async function sendCancelationEmail(customerEmail)
 async function sendPaymentSucceedEmail(customerEmail, entry)
 {
     console.log('Sending successful payment email');
-    let htmlEmail = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    try
+    {
+        let htmlEmail = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">
     
     <head>
@@ -542,12 +544,18 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
     </body>
     
     </html>`
-    strapi.plugins['email'].services.email.send({
-        to: customerEmail,
-        from: 'about@heavensentnow.com',
-        subject: 'HeavenSent membership charge',
-        html: htmlEmail
-    });
+        strapi.plugins['email'].services.email.send({
+            to: customerEmail,
+            from: 'info@heavensentnow.com',
+            subject: 'HeavenSent membership charge',
+            html: htmlEmail
+        });
+    }
+    catch (err)
+    {
+        console.log("Error sending successful email!");
+        console.log(err);
+    }
 }
 async function sendPaymentFailedEmail(customerEmail, receiptLink, attemptCount)
 {
@@ -739,7 +747,7 @@ async function sendPaymentFailedEmail(customerEmail, receiptLink, attemptCount)
     </html>`
     strapi.plugins['email'].services.email.send({
         to: customerEmail,
-        from: 'about@heavensentnow.com',
+        from: 'info@heavensentnow.com',
         subject: 'HeavenSent membership charge attemp failed',
         html: htmlEmail
     });

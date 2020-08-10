@@ -25,7 +25,7 @@ module.exports = {
         console.log(`About to send email to ${entry.userEmail}`);
         // strapi.plugins['email'].services.email.send({
         //     to: entry.userEmail,
-        //     from: 'about@heavensentnow.com',
+        //     from: 'info@heavensentnow.com',
         //     // subject: `${entry.owner.username} set you as their admin.`,
         //     subject: `You've been charged for membership`,
             
