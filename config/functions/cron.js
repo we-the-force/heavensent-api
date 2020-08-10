@@ -78,7 +78,7 @@ module.exports = {
         console.log('sending email');
         await strapi.plugins['email'].services.email.send({
           to: obj.email,
-          from: 'about@wetheforce.com',
+          from: 'about@heavensentnow.com',
           // subject: `${entry.owner.username} set you as their admin.`,
           subject: `A memory is now available`,
           

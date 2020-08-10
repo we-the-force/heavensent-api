@@ -20,6 +20,10 @@
     },
     "billedCard": {
       "type": "string"
+    },
+    "cancelOnPeriodEnd": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

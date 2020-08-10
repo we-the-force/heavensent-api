@@ -17,9 +17,9 @@
       "via": "donations"
     },
     "user": {
+      "via": "donations",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "donations"
+      "model": "user"
     },
     "date": {
       "type": "date"

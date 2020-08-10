@@ -88,8 +88,8 @@
       "type": "integer"
     },
     "donations": {
-      "via": "user",
-      "collection": "donation"
+      "collection": "donation",
+      "via": "user"
     },
     "phone": {
       "type": "biginteger"

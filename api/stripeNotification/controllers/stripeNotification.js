@@ -254,7 +254,7 @@ async function sendCancelationEmail(customerEmail)
                                         </table>
                                         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                             <tr>
-                                                <td height="35" style="font-size: 35px; line-height: 35px; padding: 0;">&nbsp;</td>
+                                                <td height="35" stylwindow.locae="font-size: 35px; line-height: 35px; padding: 0;">&nbsp;</td>
                                             </tr>
                                         </table>
                                         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
@@ -291,7 +291,7 @@ async function sendCancelationEmail(customerEmail)
                                             </tr>
                                         </table>
                                         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
-                                            <tr>
+                                            <tr>window.loca
                                                 <td height="30" style="font-size: 30px; line-height: 30px; padding: 0;">&nbsp;</td>
                                             </tr>
                                         </table>
@@ -312,7 +312,7 @@ async function sendCancelationEmail(customerEmail)
                     <tr>
                         <td class="inner" style="padding: 0px 10px;">
                             <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
-                                <tr>
+                                <tr>window.loca
                                     <td class="inner header__text" align="center" valign="top" style="color: #cccccc; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; padding: 0px 10px; text-decoration: none;">
                                         <a class="header__link" href="http://app.heavensentnow.com" target="_blank" style="Margin: 0; color: #cccccc; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; line-height: 1.3; margin: 0 !important; padding: 0; text-decoration: none;">&copy;&nbsp;2020&nbsp;Heaven Sent&nbsp;</a>                                    </td>
                                 </tr>
@@ -337,7 +337,7 @@ async function sendCancelationEmail(customerEmail)
     </html>`
     strapi.plugins['email'].services.email.send({
         to: customerEmail,
-        from: 'about@wetheforce.com',
+        from: 'about@heavensentnow.com',
         subject: 'Membership cancelation',
         html: htmlEmail
     });
@@ -544,7 +544,7 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
     </html>`
     strapi.plugins['email'].services.email.send({
         to: customerEmail,
-        from: 'about@wetheforce.com',
+        from: 'about@heavensentnow.com',
         subject: 'HeavenSent membership charge',
         html: htmlEmail
     });
@@ -739,7 +739,7 @@ async function sendPaymentFailedEmail(customerEmail, receiptLink, attemptCount)
     </html>`
     strapi.plugins['email'].services.email.send({
         to: customerEmail,
-        from: 'about@wetheforce.com',
+        from: 'about@heavensentnow.com',
         subject: 'HeavenSent membership charge attemp failed',
         html: htmlEmail
     });
