@@ -563,7 +563,7 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
     </html>`
         strapi.plugins['email'].services.email.send({
             to: customerEmail,
-            from: 'info@heavensentnow.com',
+            from: 'about@wetheforce.com',
             subject: 'HeavenSent membership charge',
             html: htmlEmail
         }).catch(function (promErr){
