@@ -362,8 +362,8 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
     }
     console.log("Attempting to send email: ");
     console.log(auxObject);
-    try
-    {
+    // try
+    // {
         let htmlEmail = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">
     
@@ -574,12 +574,12 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
         //     console.log("stringify");
         //     console.log(JSON.stringify(promErr));
         // });
-    }
-    catch (err)
-    {
-        console.log("[tryCatch] Error sending successful email!");
-        console.log(err);
-    }
+    // }
+    // catch (err)
+    // {
+    //     console.log("[tryCatch] Error sending successful email!");
+    //     console.log(err);
+    // }
 }
 async function sendPaymentFailedEmail(customerEmail, receiptLink, attemptCount)
 {
