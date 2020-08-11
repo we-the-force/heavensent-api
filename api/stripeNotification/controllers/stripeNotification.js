@@ -20,15 +20,15 @@ module.exports = {
             // event = JSON.parse(ctx.request.body);
             event = request.body;
             isListenable = eventsToListenTo.includes(event.type);
-            if (!isListenable)
-            {
-                console.log(`This event is not in the listenable events list (${event.type})`);
-            }
-            else
+            if (isListenable)
             {
                 console.log(`! !! !!! !!! The current event is listenable (${event.type}) !!! !!! !! !`);
                 handleListenedEvent(event);
             }
+            // else
+            // {
+            //     console.log(`This event is not in the listenable events list (${event.type})`);
+            // }
         }
         catch (err)
         {
@@ -348,6 +348,7 @@ async function sendCancelationEmail(customerEmail)
     strapi.plugins['email'].services.email.send({
         to: customerEmail,
         from: 'info@heavensentnow.com',
+        text: `Membership cancelation notification`,
         subject: 'Membership cancelation',
         html: htmlEmail
     });
@@ -564,8 +565,8 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
         await strapi.plugins['email'].services.email.send({
             to: customerEmail,
             from: 'info@heavensentnow.com',
-            text: `Admin Invitation`,
-            subject: 'HeavenSent membership charge',
+            text: `Payment succeeded notification`,
+            subject: 'HeavenSent membership invoice',
             html: htmlEmail
         })
         console.log("After email");
@@ -775,6 +776,7 @@ async function sendPaymentFailedEmail(customerEmail, receiptLink, attemptCount)
     strapi.plugins['email'].services.email.send({
         to: customerEmail,
         from: 'info@heavensentnow.com',
+        text: `Payment failed notification`,
         subject: 'HeavenSent membership charge attemp failed',
         html: htmlEmail
     });
