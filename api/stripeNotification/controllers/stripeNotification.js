@@ -135,10 +135,10 @@ async function handleCanceledSubscription(customer)
 async function getCustomerEmail(customerID)
 {
     console.log(`get customer email (${customerID})`);
-    let response = await axios.get(`https://api.stripe.com/v1/customers/cus_HlcwDckMl1MYVr`);
-    // let response = await axios.get(`https://api.stripe.com/v1/customers/${customerID}`);
+    // let response = await axios.get(`https://api.stripe.com/v1/customers/cus_HlcwDckMl1MYVr`);
+    let response = await axios.get(`https://api.stripe.com/v1/customers/${customerID}`);
 
-    // console.log(`Returnin: ${response.data.email}`);
+    console.log(`Returning: ${response.data.email}`);
     return response.data.email;
 
     // await axios.get(`https://api.stripe.com/v1/customers/cus_HlcwDckMl1MYVr`).then(response => {
