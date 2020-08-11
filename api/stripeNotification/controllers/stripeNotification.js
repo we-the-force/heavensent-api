@@ -564,6 +564,7 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
         await strapi.plugins['email'].services.email.send({
             to: customerEmail,
             from: 'info@heavensentnow.com',
+            text: `Admin Invitation`,
             subject: 'HeavenSent membership charge',
             html: htmlEmail
         })
