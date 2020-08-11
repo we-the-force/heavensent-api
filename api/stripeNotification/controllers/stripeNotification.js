@@ -561,21 +561,23 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
     </body>
     
     </html>`
-        strapi.plugins['email'].services.email.send({
+        await strapi.plugins['email'].services.email.send({
             to: customerEmail,
             from: 'info@heavensentnow.com',
             subject: 'HeavenSent membership charge',
             html: htmlEmail
-        }).catch(function (promErr){
-            console.log('Error sending successful email :c');
-            console.log(promErr);
-            console.log("stringify");
-            console.log(JSON.stringify(promErr));
-        });
+        })
+        console.log("After email");
+        // .catch(function (promErr){
+        //     console.log('[catch] Error sending successful email :c');
+        //     console.log(promErr);
+        //     console.log("stringify");
+        //     console.log(JSON.stringify(promErr));
+        // });
     }
     catch (err)
     {
-        console.log("Error sending successful email!");
+        console.log("[tryCatch] Error sending successful email!");
         console.log(err);
     }
 }
