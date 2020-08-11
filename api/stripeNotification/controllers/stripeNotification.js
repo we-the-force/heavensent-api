@@ -579,6 +579,8 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
     {
         console.log("[tryCatch] Error sending successful email!");
         console.log(err);
+        console.log("stringify");
+        console.log(JSON.stringify(err));
     }
 }
 async function sendPaymentFailedEmail(customerEmail, receiptLink, attemptCount)
