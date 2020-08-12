@@ -53,6 +53,9 @@
     },
     "stripeID": {
       "type": "string"
+    },
+    "stripePrice": {
+      "type": "string"
     }
   }
 }
