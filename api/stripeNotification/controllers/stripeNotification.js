@@ -74,7 +74,7 @@ async function handleListenedEvent(event)
                     };
                     console.log('');
                     console.log('Entry Object');
-                    console.log(entryObject);
+                    console.log(entry);
                     console.log('');
 
 
