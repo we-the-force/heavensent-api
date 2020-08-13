@@ -352,6 +352,7 @@ async function sendCancelationEmail(customerEmail)
         subject: 'Membership cancelation',
         html: htmlEmail
     });
+    console.log("After sending cancelation email");
 }
 async function sendPaymentSucceedEmail(customerEmail, entry)
 {
@@ -569,7 +570,7 @@ async function sendPaymentSucceedEmail(customerEmail, entry)
             subject: 'HeavenSent membership invoice',
             html: htmlEmail
         })
-        console.log("After email");
+        console.log("After payment succeeded email");
         // .catch(function (promErr){
         //     console.log('[catch] Error sending successful email :c');
         //     console.log(promErr);
@@ -780,6 +781,7 @@ async function sendPaymentFailedEmail(customerEmail, receiptLink, attemptCount)
         subject: 'HeavenSent membership charge attemp failed',
         html: htmlEmail
     });
+    console.log("After payment failed email");
 }
 
 function formatDate(date, includeTime)
