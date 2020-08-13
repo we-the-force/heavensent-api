@@ -287,7 +287,6 @@ async function handleListenedEvent(event)
                     });
 
                     // sendPaymentSucceedEmail(userEmail, entryObject);
-                    break;
                 }
                 catch (err)
                 {
@@ -398,7 +397,7 @@ async function handleListenedEvent(event)
                                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                                     <tr>
                                                         <td height="45" style="font-size: 45px; line-height: 45px; padding: 0;">&nbsp;</td>
-                                                    </tr>
+                        </tr>
                                                 </table>
                                             </td>
                                         </tr>
@@ -415,15 +414,23 @@ async function handleListenedEvent(event)
                                                             </table>
                                                             <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                                                 <tr>
-                                                                    <td height="35" stylwindow.locae="font-size: 35px; line-height: 35px; padding: 0;">&nbsp;</td>
+                                                                    <td height="35" style="font-size: 35px; line-height: 35px; padding: 0;">&nbsp;</td>
                                                                 </tr>
                                                             </table>
                                                             <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                                                 <tr>
                                                                     <td class="inner" align="center" valign="top" style="padding: 0px 10px;">
                                                                         <p class="h1" style="Margin:
-                        0; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 25px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">Due to a multiple payment failures, your HeavenSent subscription has been canceled</p><br/><br/>
+                        0; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 25px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">Your invoice is available</p><br/><br/>
+                                                                      <p style="margin-left: auto; margin-right: auto; width: 80%; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">
+                                                                         
+                                                                        Amount: <b>TEST</b>
+                                                                        <br>
+                                                                        Date: <b>TEST</b>
+                                                                        <br>
+                                                                        Concept: <b>TEST</b>
                                                                       </p>
+                                                                      <br/><br/>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -433,13 +440,13 @@ async function handleListenedEvent(event)
                                                                     <td height="15" style="font-size: 15px; line-height: 15px; padding: 0;">&nbsp;</td>
                                                                 </tr>
                                                             </table>
-                                                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
-                                                                <tr>
-                                                                    <td class="padding-0-30" align="center" valign="top" style="padding: 0 30px;">
-                                                                        
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
+                                                            
+                                                            <table class="content__button" width="190" height="48" cellpadding="0" cellspacing="0" border="0" bgcolor="#9DD6EA" style="background-color: #9DD6EA; border-radius: 3px; border-spacing: 0; color: #ffffff !important; font-family: Arial,sans-serif; height: 48px; padding: 0 15px;">
+                                                                        <tr>
+                                                                            <td align="center" valign="middle" height="48" style="color: #ffffff !important; padding: 0;"> <a class="content__button-link" href="TEST" target="_blank" style="Margin: 0; color: #ffffff !important; display: inline-block; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 20px; font-weight: 600; line-height: 48px; margin: 0 !important; padding: 0; text-decoration: none;">Invoice</a>                                                </td>
+                                                                            <!-- FIN LINK DE BACKEND -->
+                                                                        </tr>
+                                                                    </table>
                                                             <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                                                 <tr>
                                                                     <td height="10" style="font-size: 10px;
@@ -452,7 +459,7 @@ async function handleListenedEvent(event)
                                                                 </tr>
                                                             </table>
                                                             <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
-                                                                <tr>window.loca
+                                                                <tr>
                                                                     <td height="30" style="font-size: 30px; line-height: 30px; padding: 0;">&nbsp;</td>
                                                                 </tr>
                                                             </table>
@@ -473,7 +480,7 @@ async function handleListenedEvent(event)
                                         <tr>
                                             <td class="inner" style="padding: 0px 10px;">
                                                 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
-                                                    <tr>window.loca
+                                                    <tr>
                                                         <td class="inner header__text" align="center" valign="top" style="color: #cccccc; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; padding: 0px 10px; text-decoration: none;">
                                                             <a class="header__link" href="http://app.heavensentnow.com" target="_blank" style="Margin: 0; color: #cccccc; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; line-height: 1.3; margin: 0 !important; padding: 0; text-decoration: none;">&copy;&nbsp;2020&nbsp;Heaven Sent&nbsp;</a>                                    </td>
                                                     </tr>
