@@ -111,4 +111,4 @@ exports
 .cache
 build
 
-keyconfig.js
+keyConfig.js
