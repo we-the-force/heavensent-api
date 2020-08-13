@@ -44,7 +44,7 @@ async function handleListenedEvent(event)
 {
     console.log("event is listenable");
     console.log(`The current event is '${event.type}'`);
-    let userEmail = await getCustomerEmail(event.data.object.customer);
+    var userEmail = await getCustomerEmail(event.data.object.customer);
     let isUndefined = userEmail === undefined;
     let isNull = isUndefined ? true : userEmail === null;
     if (!isUndefined && !isNull)
