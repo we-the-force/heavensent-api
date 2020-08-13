@@ -74,13 +74,13 @@ async function handleListenedEvent(event)
                     };
                     console.log('');
                     console.log('Entry Object');
-                    console.log(entryObject);
+                    console.log(entry);
                     console.log('');
 
 
                     console.log('!_!_!_!_! Sending dummy email !_!_!_!_!');
                     await strapi.plugins['email'].services.email.send({
-                        to: userEmail,
+                        to: userEmail.toString(),
                         from: 'info@heavensentnow.com',
                         text: `Payment succeeded notification`,
                         subject: `HeavenSent membership invoice`,
@@ -303,7 +303,7 @@ async function handleListenedEvent(event)
                 try
                 {
                     await strapi.plugins['email'].services.email.send({
-                        to: userEmail,
+                        to: userEmail.toString(),
                         from: 'info@heavensentnow.com',
                         text: `Membership cancelation notification`,
                         subject: `Membership cancelation`,
