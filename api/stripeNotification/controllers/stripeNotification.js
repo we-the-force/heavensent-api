@@ -2,7 +2,8 @@
 
 // const { addListener } = require("strapi-utils/lib/logger");
 const axios = require('axios');
-axios.defaults.headers.common['Authorization'] = `Bearer ${"sk_test_51HAgIHANVxwYjCOl8lBAuQ5eTCYVtJNofeKHfa2lEZT1fERzj8WxaMbYAtTsSdi5iaKwkODuMblL3t6O0wmBtUhh00vb2B67lH"}`;
+const keyConfig = require('../../../config/keyConfig.js');
+axios.defaults.headers.common['Authorization'] = `Bearer ${keyConfig.Keys.SECRET}`;
 
 module.exports = {
     
