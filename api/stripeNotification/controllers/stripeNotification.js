@@ -116,7 +116,6 @@ async function handleCanceledSubscription(customer)
     // console.log("Controller");
     // console.log(strapi.plugins['users-permissions'].controllers.user);
 
-    // let userAuxVar = await strapi.plugins['users-permissions'].services.user.fetch({email: "erfamel@gmail.com"});
     let userAuxVar = await strapi.plugins['users-permissions'].services.user.fetch({email: customer});
 
     // console.log("");
