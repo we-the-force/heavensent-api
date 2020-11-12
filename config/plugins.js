@@ -8,8 +8,9 @@ module.exports = ({env}) => (
             apiKey: process.env.SENDGRID_API_KEY,
         },
         settings: {
-            defaultFrom: 'erfamel@gmail.com',
-            defaultReplyTo: 'erfamel@gmail.com',
+            
+            defaultFrom: 'will@wetheforce.com',
+            defaultReplyTo: 'will@wetheforce.com',
         },
     },
 });
