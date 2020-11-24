@@ -54,6 +54,9 @@ module.exports = {
             enabled: true,
             multipart: true
         },
+        cron: {
+            enabled: true
+        },
         gzip: {
             // enabled: true
             enabled: false
