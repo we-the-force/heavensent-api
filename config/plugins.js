@@ -5,8 +5,8 @@ module.exports = ({env}) => (
           provider: 'gmail-2lo',
           providerOptions: {
             username: 'info@heavensentnow.com',
-            clientId: env('1017390179178-ggnkp2tifikf1n7fcvh9ng4o779m9kpa.apps.googleusercontent.com'),
-            privateKey: env('Jm-CuUxKWDGqBuj4wnhMulkR').replace(/\\n/g, '\n'),
+            clientId: '1017390179178-ggnkp2tifikf1n7fcvh9ng4o779m9kpa.apps.googleusercontent.com',
+            privateKey: 'Jm-CuUxKWDGqBuj4wnhMulkR',
           },
           settings: {
             defaultFrom: 'info@heavensentnow.com',
