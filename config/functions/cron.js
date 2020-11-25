@@ -67,7 +67,7 @@ module.exports = {
         var recipient = memory.recipients[conIndex];
 
         let obj = {
-          url: `http://app.heavensentnow.com/#!/memory/${memory.id}`,
+          url: `http://app.heavensentnow.com/#!/user/${memory.owners[0].id}/memory/${memory.id}/0`,
           sender: memory.owners[0].name != "" ? memory.owners[0].name : memory.owners[0].username,
           senderEmail: memory.owners[0].email,
           name: recipient.name != "" ? recipient.name : recipient.username,
@@ -92,63 +92,7 @@ module.exports = {
               <meta http-equiv="X-UA-Compatible" content="IE=edge">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <title></title>
-              <style type="text/css">
-                  @font-face {
-                      font-family: "Gotham";
-                      src: url("http://app.mydoctorize.com/fonts/GothamProLight.otf");
-                      font-weight: 300;
-                      font-style: normal;
-                  }
-                  
-                  @font-face {
-                      font-family: "Gotham";
-                      src: url("http://app.mydoctorize.com/fonts/GothamProLightItalic.otf");
-                      font-weight: 300;
-                      font-style: italic;
-                  }
-                  
-                  @font-face {
-                      font-family: "Gotham";
-                      src: url("http://app.mydoctorize.com/fonts/GothamProRegular.otf");
-                      font-weight: normal;
-                      font-style: normal;
-                  }
-                  
-                  @font-face {
-                      font-family: "Gotham";
-                      src: url("http://app.mydoctorize.com/fonts/GothamProRegular.otf");
-                      font-weight: normal;
-                      font-style: italic;
-                  }
-                  
-                  @font-face {
-                      font-family: "Gotham";
-                      src: url("http://app.mydoctorize.com/fonts/GothamProMedium.otf");
-                      font-weight: 500;
-                      font-style: normal;
-                  }
-                  
-                  @font-face {
-                      font-family: "Gotham";
-                      src: url("http://app.mydoctorize.com/fonts/GothamProMediumItalic.otf");
-                      font-weight: 500;
-                      font-style: italic;
-                  }
-                  
-                  @font-face {
-                      font-family: "Gotham";
-                      src: url("http://app.mydoctorize.com/fonts/GothamProBold.otf");
-                      font-weight: 600;
-                      font-style: normal;
-                  }
-                  
-                  @font-face {
-                      font-family: "Gotham";
-                      src: url("http://app.mydoctorize.com/fonts/GothamProBoldItalic.otf");
-                      font-weight: 600;
-                      font-style: italic;
-                  }
-              </style>
+             
               <!--[if (gte mso 9)|(IE)]> <style type="text/css"> table{border-collapse: collapse;}</style><![endif]-->
           </head>
           

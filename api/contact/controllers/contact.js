@@ -47,64 +47,8 @@ module.exports = {
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title></title>
-                <style type="text/css">
-                    @font-face {
-                        font-family: "Gotham";
-                        src: url("http://app.mydoctorize.com/fonts/GothamProLight.otf");
-                        font-weight: 300;
-                        font-style: normal;
-                    }
-                    
-                    @font-face {
-                        font-family: "Gotham";
-                        src: url("http://app.mydoctorize.com/fonts/GothamProLightItalic.otf");
-                        font-weight: 300;
-                        font-style: italic;
-                    }
-                    
-                    @font-face {
-                        font-family: "Gotham";
-                        src: url("http://app.mydoctorize.com/fonts/GothamProRegular.otf");
-                        font-weight: normal;
-                        font-style: normal;
-                    }
-                    
-                    @font-face {
-                        font-family: "Gotham";
-                        src: url("http://app.mydoctorize.com/fonts/GothamProRegular.otf");
-                        font-weight: normal;
-                        font-style: italic;
-                    }
-                    
-                    @font-face {
-                        font-family: "Gotham";
-                        src: url("http://app.mydoctorize.com/fonts/GothamProMedium.otf");
-                        font-weight: 500;
-                        font-style: normal;
-                    }
-                    
-                    @font-face {
-                        font-family: "Gotham";
-                        src: url("http://app.mydoctorize.com/fonts/GothamProMediumItalic.otf");
-                        font-weight: 500;
-                        font-style: italic;
-                    }
-                    
-                    @font-face {
-                        font-family: "Gotham";
-                        src: url("http://app.mydoctorize.com/fonts/GothamProBold.otf");
-                        font-weight: 600;
-                        font-style: normal;
-                    }
-                    
-                    @font-face {
-                        font-family: "Gotham";
-                        src: url("http://app.mydoctorize.com/fonts/GothamProBoldItalic.otf");
-                        font-weight: 600;
-                        font-style: italic;
-                    }
-                </style>
+                <title>Admin User</title>
+                
                 <!--[if (gte mso 9)|(IE)]> <style type="text/css"> table{border-collapse: collapse;}</style><![endif]-->
             </head>
             
@@ -155,8 +99,8 @@ module.exports = {
                                                     <tr>
                                                         <td class="inner" align="center" valign="top" style="padding: 0px 10px;">
                                                             <p class="h1" style="Margin:
-            0; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 25px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">You have been invited...</p><br/><br/>
-                                                          <p style="margin-left: auto; margin-right: auto; width: 80%; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">
+            0; color: #2D444E; font-family: Helvetica,Arial,sans-serif; font-size: 25px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">You have been invited...</p><br/><br/>
+                                                          <p style="margin-left: auto; margin-right: auto; width: 80%; color: #2D444E; font-family: Helvetica,Arial,sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">
                                                             <b>${entry.owner.username}</b> 
                                                             has invited you to manage his memories. Please accept the invitation clicking the button below.
                                                           </p>
@@ -187,7 +131,7 @@ module.exports = {
                                                     <tr>
                                                       <!-- LINK DE 
             END -->
-                                                        <td align="center" valign="middle" height="48" style="color: #ffffff !important; padding: 0;"> <a class="content__button-link" href="" target="_blank" style="Margin: 0; color: #ffffff !important; display: inline-block; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 20px; font-weight: 600; line-height: 48px; margin: 0 !important; padding: 0; text-decoration: none;">Accept</a>                                                </td>
+                                                        <td align="center" valign="middle" height="48" style="color: #ffffff !important; padding: 0;"> <a class="content__button-link" href="" target="_blank" style="Margin: 0; color: #ffffff !important; display: inline-block; font-family: Helvetica,Arial,sans-serif; font-size: 20px; font-weight: 600; line-height: 48px; margin: 0 !important; padding: 0; text-decoration: none;">Accept</a>                                                </td>
                                                         <!-- FIN LINK DE BACKEND -->
                                                     </tr>
                                                 </table>
@@ -219,8 +163,8 @@ module.exports = {
                                 <td class="inner" style="padding: 0px 10px;">
                                     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; color: #2D444E; font-family: Arial,sans-serif;">
                                         <tr>
-                                            <td class="inner header__text" align="center" valign="top" style="color: #cccccc; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; padding: 0px 10px; text-decoration: none;">
-                                                <a class="header__link" href="http://app.heavensentnow.com" target="_blank" style="Margin: 0; color: #cccccc; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; line-height: 1.3; margin: 0 !important; padding: 0; text-decoration: none;">&copy;&nbsp;2020&nbsp;Heaven Sent&nbsp;</a>                                    </td>
+                                            <td class="inner header__text" align="center" valign="top" style="color: #cccccc; font-family: Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; padding: 0px 10px; text-decoration: none;">
+                                                <a class="header__link" href="http://app.heavensentnow.com" target="_blank" style="Margin: 0; color: #cccccc; font-family: Helvetica,Arial,sans-serif; font-size: 13px; font-weight: 300; line-height: 1.3; margin: 0 !important; padding: 0; text-decoration: none;">&copy;&nbsp;2020&nbsp;Heaven Sent&nbsp;</a>                                    </td>
                                         </tr>
                                     </table>
                                 </td>
