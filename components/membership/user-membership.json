@@ -24,6 +24,9 @@
     "cancelOnPeriodEnd": {
       "type": "boolean",
       "default": false
+    },
+    "creation_date": {
+      "type": "text"
     }
   }
 }
