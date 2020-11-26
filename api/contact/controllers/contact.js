@@ -7,6 +7,23 @@
 const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
 
 module.exports = {
+    
+    /**
+    * Retrieve records.
+    *
+    * @return {Array}
+    */
+    async find(ctx, { populate } = {}) {
+      let entities;
+      if (ctx.query._q) {
+        entities = await strapi.services.contact.search(ctx.query);
+      } else {
+        entities = await strapi.services.contact.find(ctx.query);
+      }
+
+      return entities.map(entity => sanitizeEntity(entity, { model: strapi.models.contact }));
+    },
+
    async create(ctx) {
       let entity;
       console.log("On create");
