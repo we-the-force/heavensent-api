@@ -30,18 +30,21 @@ sanitizeEntity(user, {
 });
 
 module.exports = {
-  /**
-   * Retrieve a record.
-   *
-   * @return {Object}
-   */
+ /**
+  * Retrieve a user record.
+  * @return {Object}
+  */
+ async findOne(ctx) {
+   const { id } = ctx.params;
+   let data = await strapi.plugins['users-permissions'].services.user.fetch({
+     id,
+   }, ['profilePicture']);
 
-  async findOne(ctx) {
-    const { id } = ctx.params;
+   if (data) {
+     data = sanitizeUser(data);
+   }
 
-    const user = await strapi.plugins['users-permissions'].services.user.fetch({ id });
-    const data = user.map(sanitizeUser);
-    // return sanitizeUser(user, { model: strapi.models.user });
-    ctx.send(data);
-  },
+   // Send 200 `ok`
+   ctx.send(data);
+ },
 };
