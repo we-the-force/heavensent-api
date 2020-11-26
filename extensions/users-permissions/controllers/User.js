@@ -24,6 +24,11 @@
 
 const { sanitizeEntity } = require('strapi-utils');
 
+const sanitizeUser = user =>
+sanitizeEntity(user, {
+  model: strapi.query('user', 'users-permissions').model,
+});
+
 module.exports = {
   /**
    * Retrieve a record.
@@ -34,7 +39,9 @@ module.exports = {
   async findOne(ctx) {
     const { id } = ctx.params;
 
-    const entity = await strapi.plugins['users-permissions'].services.user.findOne({ id });
-    return sanitizeEntity(entity, { model: strapi.models.user });
+    const user = await strapi.plugins['users-permissions'].services.user.fetch({ id });
+    const data = user.map(sanitizeUser);
+    // return sanitizeUser(user, { model: strapi.models.user });
+    ctx.send(data);
   },
 };
