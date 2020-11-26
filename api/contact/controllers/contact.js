@@ -129,9 +129,7 @@ module.exports = {
                                                 </table>
                                                 <table class="content__button" width="190" height="48" cellpadding="0" cellspacing="0" border="0" bgcolor="#9DD6EA" style="background-color: #9DD6EA; border-radius: 3px; border-spacing: 0; color: #ffffff !important; font-family: Arial,sans-serif; height: 48px; padding: 0 15px;">
                                                     <tr>
-                                                      <!-- LINK DE 
-            END -->
-                                                        <td align="center" valign="middle" height="48" style="color: #ffffff !important; padding: 0;"> <a class="content__button-link" href="" target="_blank" style="Margin: 0; color: #ffffff !important; display: inline-block; font-family: Helvetica,Arial,sans-serif; font-size: 20px; font-weight: 600; line-height: 48px; margin: 0 !important; padding: 0; text-decoration: none;">Accept</a>                                                </td>
+                                                      <!-- LINK DE END -->
                                                         <!-- FIN LINK DE BACKEND -->
                                                     </tr>
                                                 </table>
