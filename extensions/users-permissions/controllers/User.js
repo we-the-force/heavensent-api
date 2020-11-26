@@ -34,7 +34,7 @@ module.exports = {
   async findOne(ctx) {
     const { id } = ctx.params;
 
-    const entity = await strapi.services.user.findOne({ id });
+    const entity = await strapi.plugins['users-permissions'].services.user.findOne({ id });
     return sanitizeEntity(entity, { model: strapi.models.user });
   },
 };
