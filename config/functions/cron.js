@@ -60,15 +60,19 @@ module.exports = {
                 console.log("Inside contact for: " + conIndex);
                 var recipient = memory.recipients[conIndex];
 
+                const contact = await strapi.api.contact.services.contact.find({
+                    contact: recipient.id,
+                });
+
+                let mail = contact[0].contactEmail ? contact[0].contactEmail : recipient.email;
+
                 let obj = {
                     url: `http://app.heavensentnow.com/#!/user/${recipient.id}/memory/${memory.id}/0`,
                     sender: memory.owners[0].name != "" ? memory.owners[0].name : memory.owners[0].username,
                     senderEmail: memory.owners[0].email,
                     name: recipient.name != "" ? recipient.name : recipient.username,
-                    email: recipient.email
+                    email: mail
                 }
-                console.log("Object");
-                console.log(obj);
 
                 console.log('sending email');
                 await strapi.plugins['email'].services.email.send({
