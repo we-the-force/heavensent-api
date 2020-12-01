@@ -59,6 +59,15 @@
     },
     "canUseOnDemand": {
       "type": "boolean"
+    },
+    "pictures_per_year": {
+      "type": "integer"
+    },
+    "videos_per_year": {
+      "type": "integer"
+    },
+    "video_duration": {
+      "type": "integer"
     }
   }
 }

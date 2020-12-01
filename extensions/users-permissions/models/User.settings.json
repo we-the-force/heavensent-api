@@ -99,6 +99,19 @@
     },
     "created_as_receiver": {
       "type": "boolean"
+    },
+    "pictures_used": {
+      "type": "integer",
+      "default": 0
+    },
+    "videos_used": {
+      "type": "integer",
+      "default": 0
+    },
+    "storage_budget": {
+      "type": "integer",
+      "default": 0,
+      "max": 100
     }
   }
 }
