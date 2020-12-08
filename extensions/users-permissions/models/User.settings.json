@@ -58,7 +58,7 @@
       "required": false
     },
     "birthday": {
-      "type": "date"
+      "type": "datetime"
     },
     "ownedMemories": {
       "collection": "memory",
