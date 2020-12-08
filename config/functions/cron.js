@@ -21,7 +21,7 @@ module.exports = {
     //
     // }
 
-    //   '* * * * *': async () => {
+    //   '/20 * * * * *': async () => {
     '* * * * *': async() => {
         let today = new moment();
         console.log("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
@@ -45,7 +45,7 @@ module.exports = {
         const memoriesToSend = [];
         unsentMemories.forEach(memory => {
             if (memory.reminder.date != null) {
-                let memoryDate = new moment(memory.reminder.date).add(1, 'day');
+                let memoryDate = new moment(memory.reminder.date);
                 console.log("Memory reminder thing:\r\n", memory.reminder);
                 console.log(`  Checking memory, (date: ${memoryDate.format()} < ${new moment().format()})`);
 
@@ -169,7 +169,7 @@ async function handleRepeatMemories(memoriesToSend)
             }
             else
             {
-                let formattedDate = newDate.add(1, 'day').format("YYYY-MM-DD");
+                let formattedDate = newDate.format("YYYY-MM-DD");
                 // let oldEndDate = new moment(memory.reminder.date_end).add(1, 'day').format("YYYY-MM-DD");
                 console.log(`    Old date was: ${memory.reminder.date}`);
                 console.log(`    New date will be: ${newDate.format("YYYY-MM-DD")}`);
@@ -183,7 +183,7 @@ async function handleRepeatMemories(memoriesToSend)
                             repeat: memory.reminder.repeat,
                             locationLat: memory.reminder.locationLat,
                             locationLng: memory.reminder.locationLng,
-                            date_end: oldEndDate.add(1, 'day').format("YYYY-MM-DD")
+                            date_end: oldEndDate.format("YYYY-MM-DD")
                         } 
                     }).then(function(asd) {
                         console.log("  Then: ", asd.reminder);
@@ -279,7 +279,7 @@ async function handleNonsentMemories(memoriesToSend)
                 }
                 else
                 {
-                    let formattedDate = newDate.add(1, 'day').format("YYYY-MM-DD");
+                    let formattedDate = newDate.format("YYYY-MM-DD");
                     // let oldEndDate = new moment(memory.reminder.date_end).add(1, 'day').format("YYYY-MM-DD");
                     console.log(`Old date was: ${memory.reminder.date}`);
                     console.log(`New date will be: ${newDate.format("YYYY-MM-DD")}`);
@@ -293,7 +293,7 @@ async function handleNonsentMemories(memoriesToSend)
                                 repeat: memory.reminder.repeat,
                                 locationLat: memory.reminder.locationLat,
                                 locationLng: memory.reminder.locationLng,
-                                date_end: oldEndDate.add(1, 'day').format("YYYY-MM-DD")
+                                date_end: oldEndDate.format("YYYY-MM-DD")
                             } 
                         }).then(function(asd) {
                             console.log("Then: ", asd.reminder);
