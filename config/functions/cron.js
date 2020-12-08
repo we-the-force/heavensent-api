@@ -144,7 +144,7 @@ module.exports = {
           0; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 25px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">You have received a memory...</p><br/><br/>
                                                         <p style="margin-left: auto; margin-right: auto; width: 80%; color: #2D444E; font-family: 'Gotham',Helvetica,Arial,sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0 !important; padding: 0;">
                                                            
-                                                         We have a memory from <b>${obj.sender}</b> ready to be delivered to you. Click the button below to open it.
+                                                         We have a memory from <b>${obj.sender}</b> ready to be delivered to you. Click the button below to open it. </br> Or order it <a href="https://wa.me/14155238886?text=join+wash-season">on demand</a>
                                                         </p>
                                                         <br/><br/>
                                                       </td>
