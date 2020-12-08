@@ -7,7 +7,7 @@
   "options": {},
   "attributes": {
     "date": {
-      "type": "date"
+      "type": "datetime"
     },
     "time": {
       "type": "time"
@@ -28,7 +28,7 @@
       "type": "string"
     },
     "date_end": {
-      "type": "date"
+      "type": "datetime"
     }
   }
 }
