@@ -39,15 +39,15 @@
       "required": false
     },
     "owners": {
-      "via": "ownedMemories",
       "plugin": "users-permissions",
       "collection": "user",
+      "via": "ownedMemories",
       "dominant": true
     },
     "recipients": {
-      "via": "receivedMemories",
       "plugin": "users-permissions",
       "collection": "user",
+      "via": "receivedMemories",
       "dominant": true
     },
     "reminderType": {
@@ -70,6 +70,10 @@
     },
     "on_demand": {
       "type": "boolean"
+    },
+    "send_repeat": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
