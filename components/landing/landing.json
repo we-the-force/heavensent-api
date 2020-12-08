@@ -72,6 +72,43 @@
     },
     "language_button": {
       "type": "string"
+    },
+    "prices_in": {
+      "type": "string"
+    },
+    "coin": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "apple_store": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "google_store": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "disclaimer": {
+      "type": "string"
     }
   }
 }
